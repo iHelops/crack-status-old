@@ -1,0 +1,19 @@
+.item {
+    .image {
+        height: 70px;
+        background: gray;
+        margin-right: 10px;
+
+        img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+    }
+
+    .description {
+        .title {
+            white-space: break-spaces;
+        }
+    }
+}

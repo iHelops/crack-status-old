@@ -1,0 +1,39 @@
+.fullgame {
+    .image {
+        width: 100%;
+        min-height: 200px;
+        position: relative;
+        left: -24px;
+        top: -24px;
+        margin-right: 30px;
+
+        img {
+            width: calc(100% + 24px);
+            height: calc(100% + 48px);
+            object-fit: cover;
+
+            @media screen and (max-width: 576px) {
+                & {
+                    width: calc(100% + 48px);
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .content {
+        .title {
+            h4 {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        .description {
+            margin-top: 40px;
+
+            & > div {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

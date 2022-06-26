@@ -1,0 +1,13 @@
+.status {
+    .text {
+        text-transform: lowercase;
+
+        &:first-letter {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.cracked { color: #52C41A !important }
+.uncracked { color: #FF4D4F !important }
+.unreleased { color: #1890FF !important }

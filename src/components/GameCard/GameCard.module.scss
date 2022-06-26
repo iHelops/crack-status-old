@@ -1,0 +1,13 @@
+.card {
+    height: 100%;
+
+    img {
+        height: 150px;
+        object-fit: cover;
+        border-bottom: 5px solid white;
+
+        &.cracked {border-color: #52C41A}
+        &.uncracked {border-color: #FF4D4F}
+        &.unreleased {border-color: #1890FF}
+    }
+}
