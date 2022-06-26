@@ -1,4 +1,4 @@
-# Online store in **React**
+# Crack Status
 [![Preview](https://i.ibb.co/JR2V0np/image.png "Preview")](https://ihelops.github.io/crack-status "Preview")
 
 ## This application uses
