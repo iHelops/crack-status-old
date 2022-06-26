@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/crack-status/static/css/main.2532e96c.css",
+    "main.js": "/crack-status/static/js/main.31a97783.js",
+    "static/media/logo.svg": "/crack-status/static/media/logo.140b56e41936b366a7f08638dfd3d72b.svg",
+    "index.html": "/crack-status/index.html",
+    "main.2532e96c.css.map": "/crack-status/static/css/main.2532e96c.css.map",
+    "main.31a97783.js.map": "/crack-status/static/js/main.31a97783.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2532e96c.css",
+    "static/js/main.31a97783.js"
+  ]
+}
