@@ -73,7 +73,7 @@ const FullGame = () => {
                                                 device: item.device,
                                                 model: item.model
                                             }
-                                        }) as RcTableProps<RecordType>["data"]
+                                        })
                                     }
                                     pagination={false}
                                     bordered
