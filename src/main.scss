@@ -19,9 +19,15 @@ body {
   }
 }
 
+.loading-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .loading {
   font-size: 60px;
   color: #1890FF;
   text-align: center;
-  width: 100%;
 }

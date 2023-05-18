@@ -36,7 +36,9 @@ const FullGame = () => {
         <div>
             <div className="container">
                 {games.isFullGameLoading ? (<>
-                    <LoadingOutlined className='loading'/>
+                    <div className='loading-container'>
+                        <LoadingOutlined className='loading'/>
+                    </div>
                 </>) : (<>
                     <FullGameCard
                         title={games.fullGame.title}
@@ -64,8 +66,17 @@ const FullGame = () => {
                                 <Title level={3}>Характеристики</Title>
                                 <Table
                                     columns={specsColumns}
-                                    dataSource={games.fullGame.specsInfo}
+                                    dataSource={
+                                        games.fullGame.specsInfo.map((item, index) => {
+                                            return {
+                                                key: index,
+                                                device: item.device,
+                                                model: item.model
+                                            }
+                                        }) as RcTableProps<RecordType>["data"]
+                                    }
                                     pagination={false}
+                                    bordered
                                 />
                             </Col>
                         </>) : undefined}

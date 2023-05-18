@@ -24,7 +24,9 @@ const Home = () => {
                     <Title level={3}>Популярные игры</Title>
                     <Row wrap gutter={30}>
                         {games.isHotGamesLoading ? (<>
-                            <LoadingOutlined className='loading'/>
+                            <div className='loading-container'>
+                                <LoadingOutlined className='loading'/>
+                            </div>
                         </>) : (<>
                             {games.hotGames.map(item => (
                                 <Col xs={24} sm={12} lg={8} xl={6} key={item.id} className={s.card}>

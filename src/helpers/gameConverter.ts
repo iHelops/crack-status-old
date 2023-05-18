@@ -2,13 +2,24 @@ import {gameApiType, gameType} from "../types";
 
 export function gameConverter(obj: gameApiType[]) {
     const newObj: gameType[] = obj.map(item => {
+        let protections = undefined;
+        try {
+            protections = JSON.parse(item.protections)
+        } catch (_) {}
+
+        let hackedGroups = undefined;
+        try {
+            hackedGroups = JSON.parse(item.hacked_groups)
+        }
+        catch (_) {}
+
         return {
             id: item.id,
             title: item.title,
             slug: item.slug,
             isAAA: item.is_AAA,
-            protections: JSON.parse(item.protections),
-            hackedGroups: JSON.parse(item.hacked_groups),
+            protections: protections || [item.protections],
+            hackedGroups: hackedGroups || [item.hacked_groups],
             releaseDate: item.release_date,
             crackDate: item.crack_date,
             shortImage: item.short_image,
